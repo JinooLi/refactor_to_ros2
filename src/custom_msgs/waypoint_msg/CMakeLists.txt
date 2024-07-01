@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5)
-project(mppi_metrics_msgs)
+project(waypoint_msg)
 
 # Default to C99
 if(NOT CMAKE_C_STANDARD)
@@ -21,10 +21,12 @@ find_package(ament_cmake REQUIRED)
 # further dependencies manually.
 # find_package(<dependency> REQUIRED)
 
+find_package(std_msgs REQUIRED)
+
 find_package(rosidl_default_generators REQUIRED)
 
 rosidl_generate_interfaces(${PROJECT_NAME}
-  "msg/MPPIMetrics.msg"
+  "msg/Waypoint.msg"
  )
 
 if(BUILD_TESTING)
