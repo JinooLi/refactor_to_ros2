@@ -1,0 +1,6 @@
+# ignore vscode settings
+.vscode/
+# ignore build files
+build/
+# ignore log
+log/
